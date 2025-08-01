@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: student-management-backend
+    env: java
+    buildCommand: ./mvnw clean install
+    startCommand: java -jar target/*.jar
+    envVars:
+      - key: DB_URL
+        value: jdbc:mysql://db4free.net:3306/studentdb1404
+      - key: DB_USERNAME
+        value: cherry1404
+      - key: DB_PASSWORD
+        value: your_password_here
