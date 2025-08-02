@@ -4,10 +4,13 @@ services:
     env: java
     buildCommand: ./mvnw clean install
     startCommand: java -jar target/*.jar
+    branch: main
+    region: singapore
+    plan: free
     envVars:
-      - key: DB_URL
-        value: jdbc:mysql://db4free.net:3306/studentmanagesdb
-      - key: DB_USERNAME
-        value: chandra7414
-      - key: DB_PASSWORD
-        value: chandra7414
+      - key: SPRING_DATASOURCE_URL
+        value: jdbc:mysql://sql12.freesqldatabase.com:3306/sql12793202
+      - key: SPRING_DATASOURCE_USERNAME
+        value: sql12793202
+      - key: SPRING_DATASOURCE_PASSWORD
+        value: aQDQxvDh8k
