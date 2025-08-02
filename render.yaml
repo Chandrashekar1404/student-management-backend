@@ -6,8 +6,8 @@ services:
     startCommand: java -jar target/*.jar
     envVars:
       - key: DB_URL
-        value: jdbc:mysql://db4free.net:3306/studentmanagedb
+        value: jdbc:mysql://db4free.net:3306/studentmanagesdb
       - key: DB_USERNAME
-        value: chandra30071
+        value: chandra7414
       - key: DB_PASSWORD
-        value: Chandra30071
+        value: chandra7414
