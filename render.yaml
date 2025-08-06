@@ -1,8 +1,12 @@
 services:
   - type: web
     name: student-management-backend
+    env: java
     buildCommand: ./mvnw clean install
     startCommand: java -jar target/*.jar
+    branch: main
+    region: singapore
+    plan: free
     envVars:
       - key: SPRING_DATASOURCE_URL
         value: jdbc:mysql://sql12.freesqldatabase.com:3306/sql12793202
